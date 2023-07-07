@@ -2,7 +2,7 @@
  * @Author: 可以清心
  * @Description: 
  * @Date: 2023-06-01 14:51:27
- * @LastEditTime: 2023-06-01 16:34:41
+ * @LastEditTime: 2023-07-07 11:27:26
  */
 const { defineConfig } = require('@vue/cli-service')
 const { VantResolver } = require('unplugin-vue-components/resolvers');
@@ -17,4 +17,7 @@ module.exports = defineConfig({
 			}),
 		],
 	},
+	devServer: {
+		allowedHosts: 'all'
+	}
 })
